@@ -131,6 +131,11 @@ window.addEventListener('load',function(){
         }
 
         set_msg();
+        
+        var your_msg = document.querySelectorAll('.msg .msg_user');
+        for(var i = 0 ; i < your_msg.length ; i++) {
+            your_msg[i].innerHTML = your_name;
+        }
     },1000)
 
 })
