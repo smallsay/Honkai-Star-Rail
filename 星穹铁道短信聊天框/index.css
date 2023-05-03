@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: han_yi_65w;
+    src: url('./hanyirunyuan65w.ttf');
+}
+
+body {
+    font-family: 'han_yi_65w';
+}
+
 body {
     background: url(./img/bg.png) no-repeat;
     background-color: black;
@@ -178,11 +187,36 @@ body {
 .msg_end div {
     width: 86%;
     height: 1px;
-    border-bottom: 1px solid rgba(177,171,171, 0.8);
+    border-bottom: 2px solid rgba(177,171,171, 0.8);
 }
 
 
 .msg_contine img {
     width: 200px;
     border-radius: 20px;
+}
+
+.set_text {
+    transition: all 3s;
+    width: 500px;
+}
+
+.set_text p {
+    background-color: rgba(177,171,171, 0.8);
+    text-align: center;
+}
+
+.set_text .hide {
+    background-color: rgba(177,171,171, 0.8);
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.set_text textarea {
+    width: 100%;
+    resize: none;
+}
+.set_text:hover {
+    opacity: 1;
 }
