@@ -173,6 +173,7 @@ body {
     padding: 10px 20px 10px 20px; 
     margin-right: 20px;
     font-weight: 500;
+    max-width: 400px;
 }
 
 
